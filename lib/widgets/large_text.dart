@@ -7,6 +7,7 @@ class LargeText extends StatelessWidget {
   final String text;
   double size;
   TextOverflow? textOverflow;
+  TextAlign? textAlign;
 
   //Constructor
   LargeText(
@@ -15,11 +16,13 @@ class LargeText extends StatelessWidget {
       this.color = Colors.black,
       this.fontWeight = FontWeight.normal,
       this.size = 0,
-      this.textOverflow = TextOverflow.visible});
+      this.textOverflow = TextOverflow.visible,
+      this.textAlign = TextAlign.center});
 
   @override
   Widget build(BuildContext context) {
     return Text(
+      textAlign: textAlign,
       overflow: textOverflow,
       text,
       style: TextStyle(

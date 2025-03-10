@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class H1 extends StatelessWidget {
+class H6 extends StatelessWidget {
   //Properties
   Color? color;
   FontWeight? fontWeight;
@@ -9,7 +9,7 @@ class H1 extends StatelessWidget {
   TextOverflow? textOverflow;
 
   //Constructor
-  H1(
+  H6(
       {super.key,
       required this.text,
       this.color = Colors.black,

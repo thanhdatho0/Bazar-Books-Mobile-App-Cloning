@@ -1,4 +1,4 @@
-import 'package:bazar_books_mobile_app_cloning/pages/Onboarding/start_screen.dart';
+import 'package:bazar_books_mobile_app_cloning/pages/Onboarding/onboarding_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -34,7 +34,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       // home: const MyHomePage(title: 'Flutter Demo Home Page'),
-      home: const StartScreen(),
+      home: const OnboardingPage(),
     );
   }
 }
