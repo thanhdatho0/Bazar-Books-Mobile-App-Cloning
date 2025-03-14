@@ -1,3 +1,4 @@
+import 'package:bazar_books_mobile_app_cloning/pages/Auth/signIn_page.dart';
 import 'package:bazar_books_mobile_app_cloning/utils/colors.dart';
 import 'package:bazar_books_mobile_app_cloning/widgets/h3.dart';
 import 'package:bazar_books_mobile_app_cloning/widgets/h6.dart';
@@ -117,7 +118,12 @@ class OnboardingPageSate extends State<OnboardingPage> {
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(10)),
                           backgroundColor: AppColors.primary50),
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => SignInPage()));
+                      },
                       child: Container(
                         padding: EdgeInsets.all(5),
                         alignment: Alignment.center,
